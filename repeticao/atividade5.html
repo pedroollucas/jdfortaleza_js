@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id="msg"></p>
+<script>
+    /*5) Faça um programa que leia 5 números e informe a soma e a média dos números*/
+    let msg = document.getElementById('msg');
+    let soma = 0;
+    let media = 0;
+        for(let i = 1; i <= 5; i++){
+            let n = Number(prompt('Digite um número: '))
+            soma += n;
+        }
+    media = soma / 5;
+        msg.innerHTML += '<br> A soma de todos os números é: ' + soma + ' e a média é: ' + media
+</script>
+</body>
+</html>

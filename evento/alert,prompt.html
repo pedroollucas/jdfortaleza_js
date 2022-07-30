@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*não entendi muito como usar os dois juntos*/
+
+		alertify=prompt('A chamada de retorno será invocada quando esta janela estiver prestes a ser redimensionada.')
+         .set({
+             onresize:function(){ 
+                 alertify.message('prompt - redimensionar retorno de chamada.')
+             },
+             resizable:true
+         });
+	</script>
+
+</body>
+</html>

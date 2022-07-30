@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id="msg"></p>
+<script>
+    /*4) Faça um programa que leia 5 números e informe o maior número.*/
+    let maior = 0;
+    let posicao = 0;
+    let msg = document.getElementById('msg');
+        for(let i = 1; i <= 5; i++){
+            let N = Number(prompt('Digite um número: '));
+                if(N > maior){
+                    maior = N;
+                    posicao = i;
+                }
+        }
+    msg.innerHTML = 'O maior número foi: ' + maior + ' e foi digitado na vez ' + posicao; 
+</script>
+</body>
+</html>
